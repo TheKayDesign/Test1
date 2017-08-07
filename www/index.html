@@ -75,7 +75,9 @@
   autoShowInterstitial: true
     });
 	
-	admob.createBannerView();
+	admob.createBannerView({
+    autoShowBanner: false
+});
 }
 
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -138,10 +140,10 @@ document.addEventListener("deviceready", onDeviceReady, false);
         <button class="StartmyButton" onclick="var now = new Date(); var start = new Date(now.getFullYear(), 0, 0); var diff = now - start; var oneDay = 1000 * 60 * 60 * 24; var day = Math.floor(diff / oneDay); document.getElementById('Outer').style.display = 'block'; document.getElementById('Outer2').style.display = 'none';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer4').style.display = 'none';getElementById('demo2').innerHTML=car[day];document.getElementById('Texty').innerHTML='Today\'s Quote'; todaysDate();">Today's Quote</button>
 
   
-  <button class="StartmyButton" onclick="document.getElementById('Outer4').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer').style.display = 'none'; document.getElementById('Outer2').style.display = 'none'">About</button>
+  <button class="StartmyButton" onclick="AdMob.removeBanner();document.getElementById('Outer4').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer').style.display = 'none'; document.getElementById('Outer2').style.display = 'none'">About</button>
 
   
-  <button class="StartmyButton" onclick="select=1;document.getElementById('Outer3').style.display = 'block';document.getElementById('Outer').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer2').style.display = 'none'">Zen Study</button>
+  <button class="StartmyButton" onclick="AdMob.removeBanner();select=1;document.getElementById('Outer3').style.display = 'block';document.getElementById('Outer').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer2').style.display = 'none'">Zen Study</button>
   
 <!--  <button class="StartmyButton" onclick="Windows.System.Launcher.LaunchUriAsync(new Uri(ms-windows-store://review/?PFN= Microsoft.Office.OneNote_8wekyb3d8bbwe));');">Rate This App</button>-->
   
@@ -259,7 +261,7 @@ the ocean."--></div>
 </table>
             
         <div id="TheKayCredit">
-          <div class="BookTextTitle"><span class="BookTextLink"><!--<a href="https://www.amazon.co.uk/gp/product/0340733500/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=0340733500&linkCode=as2&tag=cyclicalen0b-21" style="color: #9de267;text-decoration:none; font-weight:bold;">--><a href="#" onclick="AdMob.removeBanner();window.open('https://www.amazon.co.uk/gp/product/0340733500/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=0340733500&linkCode=as2&tag=cyclicalen0b-21/','_system', 'location=yes');"  style="color: #9de267;text-decoration:none; font-weight:bold;">The Power of Now: A Guide to Spiritual Enlightenment</a></span><br><span class="BookText">The phenomenal bestselling self-help book of its generation - for spiritual followers of the Dalai Lama and Deepak Chopra. Eckhart Tolle demonstrates how to live a healthier and happier life by living in the present moment.
+          <div class="BookTextTitle"><span class="BookTextLink"><!--<a href="https://www.amazon.co.uk/gp/product/0340733500/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=0340733500&linkCode=as2&tag=cyclicalen0b-21" style="color: #9de267;text-decoration:none; font-weight:bold;">--><a href="#" onclick="window.open('https://www.amazon.co.uk/gp/product/0340733500/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=0340733500&linkCode=as2&tag=cyclicalen0b-21/','_system', 'location=yes');"  style="color: #9de267;text-decoration:none; font-weight:bold;">The Power of Now: A Guide to Spiritual Enlightenment</a></span><br><span class="BookText">The phenomenal bestselling self-help book of its generation - for spiritual followers of the Dalai Lama and Deepak Chopra. Eckhart Tolle demonstrates how to live a healthier and happier life by living in the present moment.
 To make the journey into The Power of Now we will need to leave our analytical mind and its false created self, the ego, behind. Although the journey is challenging, Eckhart Tolle offers simple language and a question and answer format to guide us.<br></span><span class="BookTextLink">
 <!-- <a href="https://www.amazon.co.uk/gp/product/0340733500/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=0340733500&linkCode=as2&tag=cyclicalen0b-21" style="color: #9de267;">Click to visit Store</a>--> <a href="#" onclick="window.open('https://www.amazon.co.uk/gp/product/0340733500/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=0340733500&linkCode=as2&tag=cyclicalen0b-21/','_system');"  style="color: #9de267;text-decoration:none;">Click to visit Store</a></span></div>
 
