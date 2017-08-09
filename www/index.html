@@ -66,9 +66,7 @@
         tappxIdAndroid:       "/XXXXXXXXX/Pub-XXXX-Android-AAAA",        // Optional
         tappxShare:           0.5                                        // Optional
     });
-	admob.requestInterstitialAd({
-    autoShowInterstitial: true
-});
+
 	admob.createBannerView();
 
 }
@@ -136,7 +134,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
   <button class="StartmyButton" onclick="document.getElementById('Outer4').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer').style.display = 'none'; document.getElementById('Outer2').style.display = 'none'">About</button>
 
   
-  <button class="StartmyButton" onclick="select=1;document.getElementById('Outer3').style.display = 'block';document.getElementById('Outer').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer2').style.display = 'none'">Zen Study</button>
+  <button class="StartmyButton" onclick="select=1;document.getElementById('Outer3').style.display = 'block';document.getElementById('Outer').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer2').style.display = 'none';	admob.requestInterstitialAd({
+    autoShowInterstitial: true
+});">Zen Study</button>
   
 <!--  <button class="StartmyButton" onclick="Windows.System.Launcher.LaunchUriAsync(new Uri(ms-windows-store://review/?PFN= Microsoft.Office.OneNote_8wekyb3d8bbwe));');">Rate This App</button>-->
   
@@ -178,7 +178,9 @@ the ocean."--></div>
     <div id="MainQuote2">
       <button class="myButton2" onclick="select=2;document.getElementById('Outer3').style.display = 'block';document.getElementById('Outer').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer2').style.display = 'none'">Zen<br>Study</button></div>
     
-        <div id="MainQuote2b"><button class="myButton2" onclick="document.getElementById('Outer2').style.display = 'block';document.getElementById('Outer').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer3').style.display = 'none';">&#9664;&#9664;<br>Back</button></div>
+        <div id="MainQuote2b"><button class="myButton2" onclick="document.getElementById('Outer2').style.display = 'block';document.getElementById('Outer').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer3').style.display = 'none';	admob.requestInterstitialAd({
+    autoShowInterstitial: true
+});">&#9664;&#9664;<br>Back</button></div>
 
 </div> <!-- end buttno inner -->
     
@@ -221,7 +223,9 @@ the ocean."--></div>
         <table width="96%" border="0" style="padding-top:15px">
             <tr>
               <td width="42%"></td>
-              <td width="20%" align="center" valign="middle" style="text-align: center"><div id="LogoBox3"><img onclick="document.getElementById('Outer2').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer').style.display = 'none'" src="img/back-button.png" class="LogoImg2"></div></td>
+              <td width="20%" align="center" valign="middle" style="text-align: center"><div id="LogoBox3"><img onclick="document.getElementById('Outer2').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer4').style.display = 'none'; document.getElementById('Outer').style.display = 'none';	admob.requestInterstitialAd({
+    autoShowInterstitial: true
+});" src="img/back-button.png" class="LogoImg2"></div></td>
               <td width="37%"></td>
             </tr>
           </table>
