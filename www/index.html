@@ -68,6 +68,9 @@
     });
 	
 	admob.createBannerView();
+	admob.requestInterstitialAd({
+    autoShowInterstitial: true
+});
 }
 
 document.addEventListener("deviceready", onDeviceReady, false);
