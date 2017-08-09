@@ -12,7 +12,7 @@
     <access origin="*" />
     <allow-intent href="http://*/*"/>
     <allow-intent href="https://*/*"/>
-    <preference name="phonegap-version" value="cli-6.1.2" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <platform name="android" />
     <preference name="android-minSdkVersion" value="14" />
     <platform name="android">
