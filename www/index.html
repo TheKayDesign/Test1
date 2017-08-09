@@ -68,9 +68,7 @@
     });
 	
 	admob.createBannerView();
-	admob.requestInterstitialAd({
-    autoShowInterstitial: true
-});
+
 }
 
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -130,7 +128,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
         <h1>Zen / Buddha Quotes</h1>  <div class="AboutText">Your daily fix of Zen / Buddha sayings to help you relax, enlighten your mind, and make a positive impact on your life's journey...  </div>
         
        <div id="StartButtons">
-        <button class="StartmyButton" onclick="var now = new Date(); var start = new Date(now.getFullYear(), 0, 0); var diff = now - start; var oneDay = 1000 * 60 * 60 * 24; var day = Math.floor(diff / oneDay); document.getElementById('Outer').style.display = 'block'; document.getElementById('Outer2').style.display = 'none';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer4').style.display = 'none';getElementById('demo2').innerHTML=car[day];document.getElementById('Texty').innerHTML='Today\'s Quote'; todaysDate();">Today's Quote</button>
+        <button class="StartmyButton" onclick="	admob.requestInterstitialAd({
+    autoShowInterstitial: true
+});var now = new Date(); var start = new Date(now.getFullYear(), 0, 0); var diff = now - start; var oneDay = 1000 * 60 * 60 * 24; var day = Math.floor(diff / oneDay); document.getElementById('Outer').style.display = 'block'; document.getElementById('Outer2').style.display = 'none';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer4').style.display = 'none';getElementById('demo2').innerHTML=car[day];document.getElementById('Texty').innerHTML='Today\'s Quote'; todaysDate();">Today's Quote</button>
 
   
   <button class="StartmyButton" onclick="document.getElementById('Outer4').style.display = 'block';document.getElementById('Outer3').style.display = 'none';document.getElementById('Outer').style.display = 'none'; document.getElementById('Outer2').style.display = 'none'">About</button>
