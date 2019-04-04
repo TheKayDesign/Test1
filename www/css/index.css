@@ -310,6 +310,15 @@ background:url("../img/sky3.jpg") no-repeat center top;
 	overflow-y: scroll;
 }
 
+#Outer6 {   /* books page */
+	position: absolute;
+	height:100%;                   /* text area height */
+    width:100%;
+	border: 1px solid black;
+	background-color:#333333;
+	overflow-y: scroll;
+}
+
 #Outer4 {     /* about page */
 	height:100vh;                   /* text area height */
     width:100%;
