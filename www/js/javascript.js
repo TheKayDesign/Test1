@@ -1,10 +1,20 @@
 ﻿// JavaScript Document
 
+	function PrivacyPolicy() {
+		document.getElementById("Outer6").style.display = "block"
+		document.getElementById("Outer").style.display = "none";
+		document.getElementById("Outer4").style.display = "none";
+		document.getElementById("Outer2").style.display = "none";
+		document.getElementById("Outer3").style.display = "none";
+		/*	alert('backbutton');*/
+		 }
+
 	function ConfirmExit() {
 		document.getElementById("Outer2").style.display = "block"
 		document.getElementById("Outer").style.display = "none";
 		document.getElementById("Outer4").style.display = "none";
-		document.getElementById("Outer3").style.display = "none";;
+		document.getElementById("Outer6").style.display = "none";
+		document.getElementById("Outer3").style.display = "none";
 		MSApp.terminateApp();
 	/*	alert('backbutton');*/
 		 }
@@ -20,6 +30,7 @@ function myFunction() {
 	document.getElementById('Outer2').style.display = 'block';
 	document.getElementById('Outer3').style.display = 'none';
 	document.getElementById('Outer4').style.display = 'none';
+	document.getElementById('Outer6').style.display = 'none';
 	document.getElementById('Texty').innerHTML='Today\'s Quote';		
 /*var now = new Date();
 var start = new Date(now.getFullYear(), 0, 0);
