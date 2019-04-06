@@ -290,6 +290,7 @@ body {
 background:url("../img/sky3.jpg") no-repeat center top;
 	background-size: cover;
 	border: 1px solid black;
+	background-attachment: fixed;
 }
 
 #Outer2 {
@@ -298,6 +299,7 @@ background:url("../img/sky3.jpg") no-repeat center top;
 	border: 1px solid black;
 	background:url(   "../img/Buddha.jpg") no-repeat center top;
 	background-size: cover;
+	background-attachment: fixed;
 	/*background-color:#333333;*/
 }
 
@@ -325,6 +327,7 @@ background:url("../img/sky3.jpg") no-repeat center top;
 	border: 1px solid black;
 		background:url(   "../img/fish3.jpg") no-repeat center top;
 		background-size: cover;
+		background-attachment: fixed;
 }
 
 #MainQuote {
